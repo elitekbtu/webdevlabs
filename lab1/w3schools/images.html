@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right -->
+
+<!-- Abbreviation	File Format	File Extension
+APNG	Animated Portable Network Graphics	.apng
+GIF	Graphics Interchange Format	.gif
+ICO	Microsoft Icon	.ico, .cur
+JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	Portable Network Graphics	.png
+SVG	Scalable Vector Graphics	.svg -->
+
+
+<!-- Image map -->
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<!-- rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region -->
+</body>
+</html>
