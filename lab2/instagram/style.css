@@ -1,0 +1,209 @@
+
+body {
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    max-width: 935px;
+    height: 70vh;
+    margin: 32px auto;
+    margin-top: 100px;
+}
+
+
+.left_content {
+    margin-bottom: 12px;
+}
+
+.left_content > img {
+    /* width: 380px; */
+    /* height: 581.15px; */
+    height: 100%;
+}
+
+.right_content {
+    display: flex;
+    max-width: 350px;
+    height: 100%;
+    margin-top: 12px;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.auth_card {
+    padding: 10px 40px;
+    border: 1px solid rgb(52, 52, 52)
+}
+
+
+.logo {
+    width: 175px;
+    height: 51px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+form > fieldset {
+    display: flex;
+    margin: 5px auto;
+}
+
+
+form > fieldset > input {
+    width: 100%;
+    padding: 9px 0px 7px 8px;
+    font-size: 12px;
+    background-color: black;
+    border: 1px solid gray;
+    color: rgb(168, 168, 168);
+    background-color: #121212;
+    border-radius: 2px;
+}
+
+
+form > button {
+    width: 100%;
+    color: white;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 8px;
+    background-color: rgb(0, 149, 246);
+}
+
+.split {
+    margin: 10px auto;
+}
+
+.split p {
+    color: #a8a8a8;
+    margin: 0 18px;
+}
+
+.split div {
+    top: .45em;
+    height: 1px;
+    background-color: blue;
+}
+
+.facebook {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.facebook > svg {
+    color: rgb(0, 149, 246);
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.facebook > a {
+    /* font-size: 14px; */
+    color: rgb(0, 149, 246);
+}
+
+.download > div a > img {
+    width: 136px;
+    height: 40px;
+}
+
+
+.split {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.split div {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.split p {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.facebook svg {
+    color: #1877f2;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.facebook a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.forget a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.another_login {
+    display: flex;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 25px 5px;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.another_login p { 
+    margin: 0 auto;
+}
+
+.another_login a {
+    margin-left: 4px;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download p {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.download div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.download a img {
+    width: 136px;
+    height: 40px;
+}
