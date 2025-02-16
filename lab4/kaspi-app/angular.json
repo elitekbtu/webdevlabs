@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kaspi": {
+    "kaspi-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/kaspi",
+            "outputPath": "dist/kaspi-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "kaspi:build:production"
+              "buildTarget": "kaspi-app:build:production"
             },
             "development": {
-              "buildTarget": "kaspi:build:development"
+              "buildTarget": "kaspi-app:build:development"
             }
           },
           "defaultConfiguration": "development"

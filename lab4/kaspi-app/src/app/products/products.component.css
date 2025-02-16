@@ -1,0 +1,89 @@
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Выравнивание карточек по центру */
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px; /* Увеличим padding для большего пространства */
+  margin: 20px; /* Увеличим margin для большего пространства между карточками */
+  border-radius: 12px; /* Увеличим радиус скругления */
+  text-align: left; /* Сменим выравнивание текста на левое */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Добавим легкую тень */
+  transition: transform 0.2s ease-in-out; /* Добавим плавную анимацию при наведении */
+  width: 300px; /* Зададим фиксированную ширину для карточек */
+}
+
+.product-card:hover {
+  transform: scale(1.02); /* Небольшое увеличение при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Тень при наведении */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Скруглим углы изображения */
+  margin-bottom: 15px; /* Добавим отступ снизу от изображения */
+  display: block; /* Убедимся, что изображение блочный элемент для отступов */
+}
+
+.product-card h2 {
+  margin-top: 0; /* Уберем верхний отступ у заголовка */
+  margin-bottom: 10px; /* Добавим отступ снизу от заголовка */
+  font-size: 22px; /* Увеличим размер шрифта заголовка */
+  color: #333; /* Сделаем цвет заголовка немного темнее */
+}
+
+.product-card p {
+  line-height: 1.6; /* Увеличим межстрочный интервал для лучшей читаемости */
+  color: #666; /* Сделаем цвет текста описания немного светлее */
+}
+
+.product-card a {
+  display: inline-block; /* Сделаем ссылку блочно-строчной */
+  margin-top: 15px; /* Отступ сверху от ссылки */
+  color: #007bff; /* Цвет ссылки */
+  text-decoration: none; /* Уберем подчеркивание */
+  font-weight: 500; /* Полужирное начертание */
+}
+
+.product-card a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.gallery {
+  display: flex;
+  gap: 10px; /* Увеличим расстояние между изображениями в галерее */
+  margin-top: 20px; /* Увеличим отступ сверху от галереи */
+  overflow-x: auto; /* Добавим горизонтальную прокрутку для галереи, если изображений много */
+  padding-bottom: 10px; /* Отступ снизу для прокрутки */
+}
+
+.gallery img {
+  width: 120px; /* Увеличим размер изображений в галерее */
+  height: 120px; /* Увеличим размер изображений в галерее */
+  object-fit: cover;
+  border-radius: 12px; /* Скруглим углы изображений галереи */
+  transition: opacity 0.2s ease-in-out; /* Плавное изменение прозрачности при наведении */
+}
+
+.gallery img:hover {
+  opacity: 0.8; /* Небольшая прозрачность при наведении на изображение галереи */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Увеличим padding для кнопки */
+  border-radius: 8px; /* Скруглим углы кнопки */
+  cursor: pointer;
+  font-size: 16px; /* Увеличим размер шрифта кнопки */
+  margin-top: 20px; /* Добавим отступ сверху от кнопки */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
