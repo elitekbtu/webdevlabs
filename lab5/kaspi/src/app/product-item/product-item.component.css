@@ -245,7 +245,7 @@
   margin-right: 14px;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease; /* Улучшенная анимация галереи */
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
 }
 
 .gallery img:hover {
@@ -274,7 +274,7 @@
   z-index: 1;
   min-width: 170px;
   padding: 8px 0;
-  transition: box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease; /* Улучшенная анимация выпадающего списка */
+  transition: box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease; 
   transform-origin: top right;
   transform: scale(0.9) rotateX(-15deg); 
   opacity: 0;

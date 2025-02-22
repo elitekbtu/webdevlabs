@@ -318,6 +318,10 @@ export class ProductListComponent {
 ];
 
 
+  onProductDelete(productId: number) {
+    this.products = this.products.filter(product => product.id !== productId);
+  }
+
   get filteredProducts() {
     return this.products.filter(product => product.categoryId === this.categoryId);
   }
