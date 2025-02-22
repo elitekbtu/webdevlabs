@@ -1,0 +1,38 @@
+<div class="product-card">
+  <div class="product-image-container">
+    <img class="product-image" [src]="mainImageUrl" alt="{{ product.name }}">
+  </div>
+  <div class="product-content">
+    <h2 class="product-name">{{ product.name }}</h2>
+    <p class="product-description">{{ product.description }}</p>
+    <p class="product-rating">Рейтинг: {{ product.rating }}</p>
+    <p class="product-likes">Лайков: {{ product.likes }}</p>
+    <div class="product-actions">
+      <button class="like-button" (click)="likeProduct()">
+        <i class="fas fa-thumbs-up"></i> Like
+      </button>
+      <div class="share-dropdown">
+        <button class="share-button">
+          <i class="fas fa-share"></i> Поделиться
+        </button>
+        <div class="share-dropdown-content">
+          <a (click)="shareOnWhatsApp()">WhatsApp</a>
+          <a (click)="shareOnFacebook()">Facebook</a>
+          <a (click)="shareOnTwitter()">Twitter</a>
+          <a (click)="shareOnVK()">VK</a>
+          <a (click)="copyToClipboard()">Скопировать ссылку</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery" *ngIf="product.images && product.images.length > 0">
+      <img *ngFor="let img of product.images"
+           [src]="img"
+           alt="gallery image"
+           class="gallery-image"
+           (click)="setMainImage(img)">
+    </div>
+     <div class="gallery" *ngIf="!product.images || product.images.length === 0">
+        Нет изображений в галерее.
+    </div>
+  </div>
+</div>
