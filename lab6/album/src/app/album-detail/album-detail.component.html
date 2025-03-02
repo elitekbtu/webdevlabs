@@ -1,0 +1,8 @@
+<div>
+  <h1>Album Detail</h1>
+  <p><strong>Title:</strong> {{ album.title }}</p>
+  <input [(ngModel)]="newTitle" class="form-control mb-2" placeholder="New Title">
+  <button class="btn btn-primary me-2" (click)="saveTitle()">Save</button>
+  <button class="btn btn-secondary me-2" (click)="goBack()">Return</button>
+  <a class="btn btn-info" (click)="viewPhotos()">Photos</a>
+</div>
